@@ -1,3 +1,6 @@
+#include <vector>
+#include <string>
+
 #define UP_ONE_DIRECTORY "../"
 #define CURRENT_DIRECTORY "./"
 
@@ -6,10 +9,10 @@ private:
     int operations;
 
 public:
-    int minOperations(vector<string>& logs) {
+    int minOperations(std::vector<std::string>& logs) {
         operations = 0;
 
-        for (const string& log : logs) {
+        for (const std::string& log : logs) {
             updateOperationsFromLog(log);
         }
 
