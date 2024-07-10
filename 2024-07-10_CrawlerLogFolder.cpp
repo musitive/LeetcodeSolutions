@@ -9,7 +9,7 @@ private:
     int operations;
 
 public:
-    int minOperations(std::vector<std::string>& logs) {
+    int minOperations(const std::vector<std::string>& logs) {
         operations = 0;
 
         for (const std::string& log : logs) {
